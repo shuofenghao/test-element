@@ -1,10 +1,10 @@
 <template>
   <el-row gutter="20">
     <el-col span="7">
-      <TreeNode/>
+      <TreeNode />
     </el-col>
     <el-col span="17">
-      <FormNode/>
+      <FormNode />
     </el-col>
   </el-row>
 </template>

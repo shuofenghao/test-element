@@ -13,6 +13,9 @@
             <el-menu-item index="/about" route="/about">
               About
             </el-menu-item>
+            <el-menu-item index="modal" route="/modal">
+              弹窗
+            </el-menu-item>
           </el-submenu>
         </el-menu>
       </el-aside>

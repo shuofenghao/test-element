@@ -23,6 +23,11 @@ const routes = [
     name: '弹窗',
     component: () => import('../views/Model.vue'),
   },
+  {
+    path: '/form',
+    name: '表单',
+    component: () => import('../views/Form.vue'),
+  },
 ];
 
 const router = new VueRouter({

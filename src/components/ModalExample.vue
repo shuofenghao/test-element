@@ -14,7 +14,10 @@
       title="自定义弹窗"
       :visible.sync="visiable"
     >
-      <el-table :data="ModalData">
+      <el-table
+        :data="ModalData"
+        :loading="true"
+      >
         <el-table-column
           property="date"
           label="日期"

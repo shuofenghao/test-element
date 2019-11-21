@@ -1,6 +1,6 @@
 <template>
   <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-    <el-form-item label="活动名称" prop="userName">
+    <el-form-item label="活动名称" prop="name.userName">
       <el-input v-model="ruleForm.name.userName"></el-input>
     </el-form-item>
     <el-form-item label="活动区域" prop="region">
@@ -67,7 +67,7 @@
           desc: ''
         },
         rules: {
-          userName: [
+          'name.userName': [
             { required: true, message: '请输入活动名称', trigger: 'blur' },
             { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
           ],
